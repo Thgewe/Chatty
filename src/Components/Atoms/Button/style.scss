@@ -1,0 +1,26 @@
+.login-item__button {
+  max-width: 233px;
+  .button {
+    width: 100%;
+    background: #5c98f1;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    color: #ffffff;
+    padding: 16px 0;
+    border: none;
+    transition: 0.2s all;
+    &:hover,
+    :focus {
+      background: #4583de;
+    }
+    &:active {
+      background: #2c6ac7;
+    }
+    &--inactive {
+      background: #d1d1d1;
+    }
+  }
+}

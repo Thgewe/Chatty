@@ -47,13 +47,15 @@
     "@commitlint/config-conventional": "^13.2.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^8.0.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
     "husky": "^7.0.2",
     "lint-staged": "^11.2.3",
-    "prettier": "^2.4.1"
+    "node-sass": "^6.0.1",
+    "prettier": "^2.4.1",
+    "react-hook-form": "^7.17.5"
   },
   "lint-staged": {
     "*.{js,tsx,ts,md}": [

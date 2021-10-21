@@ -1,0 +1,38 @@
+.container {
+  &::after {
+    content: "";
+    background: #000;
+    height: 100px;
+    width: 100px;
+  }
+  max-width: 354px;
+  .input-field {
+    width: 354px;
+    border: 1px solid #b3cdf8;
+    border-radius: 8px;
+    padding: 16px;
+    outline: none;
+    font-size: 15px;
+    line-height: 23px;
+    font-family: inherit;
+    &:focus {
+      border-color: #5c98f1;
+    }
+    &::placeholder {
+      color: #9f9f9f;
+    }
+    &--error {
+      border: 1px solid #FB6262;
+      width: 354px;
+      border-radius: 8px;
+      padding: 16px;
+      outline: none;
+      font-size: 15px;
+      line-height: 23px;
+      font-family: inherit;
+      background: transparent url(./img/inputError.svg) no-repeat center right 16px;
+      background-size: 20px;
+      padding-right: 52px;
+    }
+  }
+}
