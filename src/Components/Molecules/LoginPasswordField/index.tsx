@@ -11,7 +11,7 @@ interface ILoginField {
 
 export const LoginPasswordField: React.FC<ILoginField> = ({ register }) => {
   return (
-    <div className="login-item__password">
+    <div className="login-password-field">
       <Label value="Password" htmlFor="password" />
       <Input
         name="password"

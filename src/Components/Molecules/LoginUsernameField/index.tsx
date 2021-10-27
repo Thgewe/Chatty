@@ -11,7 +11,7 @@ interface IUsernameField {
 
 export const LoginUsernameField: React.FC<IUsernameField> = ({ register }) => {
   return (
-    <div className="login-item__username">
+    <div className="login-username-field">
       <Label value="User name" htmlFor="username" />
       <Input
         name="username"
