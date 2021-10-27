@@ -19,7 +19,7 @@ export const Input: React.FC<IInput> = ({
   return (
     <div className="input">
       <input
-        {...register(name, { required: true })}
+        {...register(name, { required: true, minLength: 3 })}
         className="input__field"
         placeholder={placeholder}
         type={type}

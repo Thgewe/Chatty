@@ -1,0 +1,20 @@
+.login-wellcome {
+  &__logo {
+    margin-bottom: 16px;
+  }
+  &__header-1 {
+    margin-bottom: 24px;
+    &:first-child {
+      color: #5e93e7;
+    }
+    span {
+      color: #5e93e7;
+    }
+    span + span {
+      color: #b3cdf8;
+    }
+  }
+  &__header-2 {
+    margin-bottom: 48px;
+  }
+}

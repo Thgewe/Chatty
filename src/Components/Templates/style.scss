@@ -1,0 +1,14 @@
+.wrapper {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  .left-side {
+    width: 50%;
+    margin-top: 256px;
+    margin-left: 121px;
+  }
+  .right-side {
+    width: 50%;
+  }
+}

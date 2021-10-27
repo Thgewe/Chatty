@@ -1,8 +1,16 @@
-.login-item {
+.loginForm {
+  &__username {
+    height: 112px;
+  }
+  &__password {
+    height: 128px;
+  }
+}
+.item {
   &__error-text {
     font-weight: 500;
     font-size: 13px;
     line-height: 19px;
-    color: #FB6262;
+    color: #fb6262;
   }
 }

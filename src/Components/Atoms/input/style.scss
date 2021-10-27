@@ -1,10 +1,4 @@
 .input {
-  &::after {
-    content: "";
-    background: #000;
-    height: 100px;
-    width: 100px;
-  }
   max-width: 354px;
   .input__field {
     width: 354px;
@@ -22,7 +16,7 @@
       color: #9f9f9f;
     }
     &--error {
-      border: 1px solid #FB6262;
+      border: 1px solid #fb6262;
       width: 354px;
       border-radius: 8px;
       padding: 16px;
@@ -30,7 +24,8 @@
       font-size: 15px;
       line-height: 23px;
       font-family: inherit;
-      background: transparent url(./img/inputError.svg) no-repeat center right 16px;
+      background: transparent url(./img/inputError.svg) no-repeat center right
+        16px;
       background-size: 20px;
       padding-right: 52px;
     }

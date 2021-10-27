@@ -10,7 +10,7 @@ function onClick(event: React.MouseEvent<HTMLButtonElement>) {
   console.log(event.target);
 }
 
-function LoginForm() {
+export const LoginForm: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -20,19 +20,21 @@ function LoginForm() {
   // console.log(isValid);
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="LoginForm">
-        <LoginUsernameField register={register} />
-        {errors.username && (
-          <p className="login-item__error-text">Something goes wrong</p>
-        )}
-        <LoginPasswordField register={register} />
-        {errors.password && (
-          <p className="login-item__error-text">Something goes wrong</p>
-        )}
+      <div className="loginForm">
+        <div className="loginForm__username">
+          <LoginUsernameField register={register} />
+          {errors.username && (
+            <p className="item__error-text">Something goes wrong</p>
+          )}
+        </div>
+        <div className="loginForm__password">
+          <LoginPasswordField register={register} />
+          {errors.password && (
+            <p className="item__error-text">Something goes wrong</p>
+          )}
+        </div>
         <Button onClick={onClick} type="submit" text="Log In" />
       </div>
     </form>
   );
-}
-
-export default LoginForm;
+};
