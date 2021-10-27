@@ -4,10 +4,10 @@ import { Button } from "../../Atoms/Button";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { LoginPasswordField } from "../../Molecules/LoginPasswordField";
 import { LoginUsernameField } from "../../Molecules/LoginUsernameField";
+import { IData } from "../../models/IData";
 
-export interface IData {
-  username: string;
-  password: string;
+function onClick(event: React.MouseEvent<HTMLButtonElement>) {
+  console.log(event.target);
 }
 
 function LoginForm() {
@@ -17,7 +17,7 @@ function LoginForm() {
     formState: { errors, isValid },
   } = useForm<IData>();
   const onSubmit: SubmitHandler<IData> = (data) => console.log(data);
-  console.log(isValid);
+  // console.log(isValid);
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="LoginForm">
@@ -29,7 +29,7 @@ function LoginForm() {
         {errors.password && (
           <p className="login-item__error-text">Something goes wrong</p>
         )}
-        <Button type="submit" text="Log In" />
+        <Button onClick={onClick} type="submit" text="Log In" />
       </div>
     </form>
   );

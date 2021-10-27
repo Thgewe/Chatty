@@ -17,10 +17,10 @@ export const Input: React.FC<IInput> = ({
   name,
 }) => {
   return (
-    <div className="container">
+    <div className="input">
       <input
         {...register(name, { required: true })}
-        className="input-field"
+        className="input__field"
         placeholder={placeholder}
         type={type}
       ></input>

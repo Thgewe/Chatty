@@ -1,4 +1,4 @@
-.container {
+.input {
   &::after {
     content: "";
     background: #000;
@@ -6,7 +6,7 @@
     width: 100px;
   }
   max-width: 354px;
-  .input-field {
+  .input__field {
     width: 354px;
     border: 1px solid #b3cdf8;
     border-radius: 8px;
