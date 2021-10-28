@@ -1,0 +1,11 @@
+.chat-field-header {
+  max-width: 1078px;
+  padding: 24px;
+  background: #FFF;
+  &__name {
+    margin-bottom: 4px;
+  }
+  &__time {
+    color: #949494;
+  }
+}

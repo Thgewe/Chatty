@@ -1,0 +1,17 @@
+.chat {
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100vh;
+  }
+}
+.bottom {
+  display: flex;
+  height: calc(100vh - 81px);
+}
+
+.diolog {
+  &__history {
+    height: calc(100vh - 259px);
+  }
+}

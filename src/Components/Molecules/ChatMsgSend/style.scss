@@ -1,0 +1,10 @@
+.msg-send {
+  display: flex;
+  align-items: center;
+  max-width: 1078px;
+  padding: 24px;
+  background: #FFF;
+  &__msg-field {
+    width: 100%;
+  }
+}

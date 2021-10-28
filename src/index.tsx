@@ -2,11 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import { LoginPage } from "./Components/Pages";
+import { LoginPage } from "./Components/Pages/LoginPage";
+import { ChatPage } from "./Components/Pages/ChatPage";
 
 ReactDOM.render(
   <React.StrictMode>
-    <LoginPage />
+    <ChatPage />
   </React.StrictMode>,
   document.getElementById("root")
 );

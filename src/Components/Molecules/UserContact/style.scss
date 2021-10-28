@@ -1,0 +1,39 @@
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  max-width: 362px;
+  transition: .2s;
+  &__avatar {
+    margin-right: 12px;
+  }
+  &__desc {
+    color: #949494;
+    span:first-child {
+      color: #5E93E7;
+    }
+  }
+  &__desc h4 {
+    margin-bottom: 4px;
+  }
+  &--active {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    max-width: 362px;
+    transition: .2s;
+    background: #5C98F1;
+    * {
+      color: #FFF;
+    }
+    span:first-child {
+      color: #FFF;
+    }
+  }
+  &:hover {
+    background: #5C98F1;
+  }
+  &:hover *, &:hover span:first-child {
+    color: #FFF;
+  }
+}
