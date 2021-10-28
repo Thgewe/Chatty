@@ -4,10 +4,14 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { LoginPage } from "./Components/Pages/LoginPage";
 import { ChatPage } from "./Components/Pages/ChatPage";
+import { BrowserRouter } from "react-router-dom";
+import { Routes } from "./routes";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChatPage />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

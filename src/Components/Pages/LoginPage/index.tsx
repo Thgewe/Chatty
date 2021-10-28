@@ -1,10 +1,10 @@
 import React from "react";
-import { ChatPageTemplate } from "../../Templates/ChatPageTemplate";
+import { LoginPageTemplate } from "../../Templates/LoginPageTemplate";
 
 export const LoginPage: React.FC = () => {
   return (
     <section>
-      <ChatPageTemplate />
+      <LoginPageTemplate />
     </section>
   );
 };
